@@ -20,13 +20,9 @@ body {
   margin: 0;
 }
 
-article {
-  margin: 5em;
-}
 
 header img {
-  padding: 1em;
-  animation: skew 1s ease-out 1s 1 backwards;
+  padding-left: 1em;
 }
 
 header {
@@ -35,27 +31,18 @@ header {
   position: -webkit-sticky;
   position: sticky;
   text-align: left;
-  display: flex;
+  display: inline-flex;
+  border-bottom-right-radius: 1em;
+  box-shadow: 0 0 10px white;
   align-items: center;
   top: 0;
+  z-index: 5;
 }
 
 header a {
   margin: 1em;
 }
 
-@keyframes skew {
-  from {
-    transform: skew(10deg);
-  }
-  to {
-    transform: skew(0deg);
-  }
-}
-
-article {
-  display: inline-block;
-}
 
 strong {
   text-align: center;
@@ -89,6 +76,7 @@ td:not(:first-child):hover {
   background: #7289DA;
   color: white;
   padding: 1em;
+  text-decoration: none;
   border-radius: 1em;
   box-shadow: #7289DA 1px 1px 5px;
 }
@@ -100,7 +88,8 @@ table {
 }
 
 footer {
-  text-align: right;
-  padding: 1em;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
   background: rgb(14, 14, 14);
 }
