@@ -9,52 +9,43 @@ html {
   }
 }
 
-a {
+table a, footer a {
   color: skyblue;
-  /* text-decoration: none; */
+}
+
+table {
+  color: white;
 }
 
 body {
-  background: black;
-  color: white;
+  background: #a0a0a0;
+  /*color: white; */
   margin: 0;
 }
 
-article {
-  margin: 5em;
-}
-
 header img {
-  padding: 1em;
-  animation: skew 1s ease-out 1s 1 backwards;
+  padding-left: 1em;
 }
 
 header {
-  background: darkslategray;
+  background: rgb(255, 255, 255);
   -ms-position: fixed;
   position: -webkit-sticky;
   position: sticky;
   text-align: left;
-  display: flex;
+  display: inline-flex;
+  border-bottom-right-radius: 1em;
   align-items: center;
   top: 0;
+  z-index: 5;
+}
+
+article {
+  padding: 1em;
 }
 
 header a {
   margin: 1em;
-}
-
-@keyframes skew {
-  from {
-    transform: skew(10deg);
-  }
-  to {
-    transform: skew(0deg);
-  }
-}
-
-article {
-  display: inline-block;
 }
 
 strong {
@@ -89,6 +80,7 @@ td:not(:first-child):hover {
   background: #7289DA;
   color: white;
   padding: 1em;
+  text-decoration: none;
   border-radius: 1em;
   box-shadow: #7289DA 1px 1px 5px;
 }
@@ -100,7 +92,10 @@ table {
 }
 
 footer {
-  text-align: right;
-  padding: 1em;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
   background: rgb(14, 14, 14);
+  position: fixed;
+  bottom: 0;
 }
