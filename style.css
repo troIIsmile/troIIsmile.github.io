@@ -8,15 +8,16 @@ html {
     font-family: 'Inter var', sans-serif;
   }
 }
-
-a {
-  color: skyblue;
-  /* text-decoration: none; */
+table a, footer a {
+color: skyblue;
+}
+table {
+  color: white;
 }
 
 body {
-  background: black;
-  color: white;
+  /* background: #000000;
+  color: white; */
   margin: 0;
 }
 
@@ -26,7 +27,7 @@ header img {
 }
 
 header {
-  background: darkslategray;
+  background: lightblue;
   -ms-position: fixed;
   position: -webkit-sticky;
   position: sticky;
@@ -38,7 +39,9 @@ header {
   top: 0;
   z-index: 5;
 }
-
+article {
+  padding: 1em;
+}
 header a {
   margin: 1em;
 }
@@ -92,4 +95,6 @@ footer {
   text-align: center;
   padding-top: 1em;
   background: rgb(14, 14, 14);
+  position: fixed;
+  bottom: 0;
 }
