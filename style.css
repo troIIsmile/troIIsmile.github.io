@@ -34,7 +34,9 @@ h2::before {
   height: 200px;
   transform: translateY(-70px) translateX(-10px);
 }
-
+h2 {
+  user-select: none;
+}
 footer {
   overflow: auto;
   text-align: left;
