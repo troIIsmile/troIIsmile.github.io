@@ -1,38 +1,26 @@
 @import url('https://rsms.me/inter/inter.css');
 html {
-  display: flex;
-  justify-content: center;
   font-family: 'Inter', sans-serif;
-  align-items: center;
-  height: 100%;
-  text-align: center;
 }
 
-header::before {
-  content: ' ';
+h1::before {
+  content: '';
   background: url("smile.svg");
-  width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-repeat: no-repeat;
+  right: 0;
+  bottom: 0;
   background-size: cover;
   background-position: center;
   z-index: -1;
-  opacity: .2;
+  opacity: .1;
 }
 
-header {
+h1 {
   font-size: 5em;
-  font-family: 'Inter Black', sans-serif;
+  font-family: 'Inter Black';
   color: blue;
-}
-
-#powered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer {
@@ -43,8 +31,6 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  color: white;
 }
 
 nav h4 {
@@ -57,15 +43,18 @@ footer>div {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  padding: 0 2rem;
 }
 
-footer nav {
+nav {
   margin: 0 0 8px;
 }
 
-footer a {
-  color: skyblue;
+nav, a {
+  color: #9b9dad;
+}
+
+h4, a:hover, footer {
+  color: white;
 }
 
 @media (min-width: 500px) {
@@ -73,8 +62,8 @@ footer a {
     position: absolute;
     right: 20px;
     top: 0;
-    text-align: right;
-    font-size: .8rem;
-    color: #9b9dad;
+  }
+  html {
+    margin: 5em;
   }
 }
