@@ -6,14 +6,29 @@ html {
   text-align: center;
 }
 
+header::before {
+  content: ' ';
+  background: url("smile.svg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: .5;
+}
+
 header {
+  background: white;
+  padding: 1em;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 1em;
   font-size: 5em;
   font-family: 'Inter Black', sans-serif;
   color: blue;
-}
-
-.logo {
-  text-shadow: 3px 3px black;
 }
 
 footer {
