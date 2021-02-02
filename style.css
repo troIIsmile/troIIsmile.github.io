@@ -32,10 +32,11 @@ h2::before {
   width: 200px;
   display: inline-block;
   height: 200px;
-  transform: translateY(-70px) translateX(-70px);
+  transform: translateY(-70px) translateX(-10px);
 }
 
 footer {
+  overflow: auto;
   text-align: left;
   background: #010101;
   padding: 40px 0;
@@ -69,7 +70,7 @@ h4, a:hover, footer {
   color: white;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 742px) {
   #right {
     position: absolute;
     right: 20px;
@@ -78,4 +79,11 @@ h4, a:hover, footer {
   html {
     margin: 5em;
   }
+  h2::before {
+    transform: translateY(-70px) translateX(-70px);
+  }
+}
+
+#right img {
+  max-width: 100%;
 }
