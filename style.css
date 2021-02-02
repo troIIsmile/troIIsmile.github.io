@@ -19,7 +19,7 @@ h1::before {
 
 h1 {
   font-size: 5em;
-  font-family: 'Inter Black';
+  font-weight: 1000;
   color: blue;
 }
 
