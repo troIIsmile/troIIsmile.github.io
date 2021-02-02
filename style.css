@@ -18,30 +18,61 @@ header::before {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  opacity: .5;
+  opacity: .2;
 }
 
 header {
-  background: white;
-  padding: 1em;
-  box-shadow: 5px 5px 5px black;
-  border-radius: 1em;
   font-size: 5em;
   font-family: 'Inter Black', sans-serif;
   color: blue;
 }
 
+#powered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
-  font-family: sans-serif;
-  position: absolute;
+  text-align: left;
+  background: #010101;
+  padding: 40px 0;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  background: rgb(53, 53, 53);
+  width: 100%;
+  color: white;
+}
+
+nav h4 {
+  display: inline;
+  margin-right: 16px;
+}
+
+footer>div {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2rem;
+}
+
+footer nav {
+  margin: 0 0 8px;
 }
 
 footer a {
   color: skyblue;
+}
+
+@media (min-width: 500px) {
+  #right {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    text-align: right;
+    font-size: .8rem;
+    color: #9b9dad;
+  }
 }
