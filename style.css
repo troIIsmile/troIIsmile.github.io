@@ -5,7 +5,7 @@ html {
 
 h1::before {
   content: '';
-  background: url("smile.svg");
+  background: url("icon.svg");
   position: fixed;
   top: 0;
   left: 0;
