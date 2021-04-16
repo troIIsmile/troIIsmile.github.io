@@ -1,3 +1,3 @@
-# Moved to GitLab
+# NXBOT Website
 
-We're now at <https://gitlab.com/trollsmile/trollsmile.gitlab.io>.
+There will be docs here soon but for now it's just links
