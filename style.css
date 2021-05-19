@@ -12,14 +12,16 @@ video.bg {
   object-fit: cover;
   z-index: -1;
 }
-#right span {
+#right {
+  width: 100%;
+  text-align: center;
   display: inline-flex;
   justify-content: center;
-  font-weight: 1000;
   align-items: center;
   padding-left: 1em;
+  font-weight: 1000;
 }
-#right span img {
+#right img {
   padding-right: 1em;
 }
 
@@ -98,6 +100,7 @@ footer {
 @media (min-width: 742px) {
   #right {
     position: absolute;
+    width: max-content;
     right: 20px;
     top: 0;
   }
