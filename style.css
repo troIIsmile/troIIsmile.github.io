@@ -12,9 +12,20 @@ video.bg {
   object-fit: cover;
   z-index: -1;
 }
+#right span {
+  display: inline-flex;
+  justify-content: center;
+  font-weight: 1000;
+  align-items: center;
+  padding-left: 1em;
+}
+#right span img {
+  padding-right: 1em;
+}
+
 h1::before {
   content: '';
-  background: url("icon.svg");
+  background: url('icon.svg');
   position: fixed;
   top: 0;
   left: 0;
@@ -23,7 +34,7 @@ h1::before {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  opacity: .1;
+  opacity: 0.1;
 }
 
 h1 {
@@ -34,7 +45,7 @@ h1 {
 
 h2::before {
   content: ' ';
-  background: url("stamp.png");
+  background: url('stamp.png');
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -62,7 +73,7 @@ nav h4 {
   margin-right: 16px;
 }
 
-footer>div {
+footer > div {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -73,11 +84,14 @@ nav {
   margin: 0 0 8px;
 }
 
-nav, a {
+nav,
+a {
   color: #9b9dad;
 }
 
-h4, a:hover, footer {
+h4,
+a:hover,
+footer {
   color: white;
 }
 
